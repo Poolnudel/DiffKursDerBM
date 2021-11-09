@@ -5,14 +5,15 @@ import java.awt.Rectangle;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 
-public class LehrerPanel extends JPanel implements ActionListener{
+@SuppressWarnings("serial")
+public class LehrerPanel extends JPanel /*implements ActionListener*/{
 	
-	public LehrerPanel(Rectangle bounds) {
+	public LehrerPanel(/*String title,Rectangle bounds*/) {
 		super();
-		
-		setBounds(bounds);
+		setBounds(50, 50, 100, 100);
 		setBackground(Color.lightGray);
 		setLayout(null);
+		setVisible(true);
 		
 	}
 }
